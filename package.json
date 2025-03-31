@@ -9,13 +9,33 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onCommand:haskell-copy-extension.appendToBuffer",
+    "onCommand:haskell-copy-extension.clearBuffer"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "haskell-copy-extension.helloWorld",
-        "title": "Hello World"
+        "command": "haskell-copy-extension.appendToBuffer",
+        "title": "Append to Copy Buffer"
+      },
+      {
+        "command": "haskell-copy-extension.clearBuffer",
+        "title": "Clear Copy Buffer"
+      }
+      
+    ],
+    "keybindings": [
+      {
+        "command": "haskell-copy-extension.appendToBuffer",
+        "key": "ctrl+c",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "haskell-copy-extension.clearBuffer",
+        "key": "ctrl+shift+c",
+        "when": "editorTextFocus"
       }
     ]
   },
@@ -45,5 +65,9 @@
     "typescript": "^5.7.3",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1"
-  }
+  },
+  "files": [
+    "out/**/*",
+    "haskell-src/**/*"
+  ]
 }

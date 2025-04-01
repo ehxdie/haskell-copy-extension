@@ -69,5 +69,8 @@
   "files": [
     "out/**/*",
     "haskell-src/**/*"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
   ]
 }

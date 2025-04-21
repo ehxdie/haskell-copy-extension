@@ -10,6 +10,7 @@
     "Other"
   ],
   "activationEvents": [
+    "onStartupFinished",
     "onCommand:haskell-copy-extension.appendToBuffer",
     "onCommand:haskell-copy-extension.clearBuffer"
   ],
@@ -69,8 +70,5 @@
   "files": [
     "out/**/*",
     "haskell-src/**/*"
-  ],
-  "activationEvents": [
-    "onStartupFinished"
   ]
 }

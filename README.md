@@ -1,71 +1,73 @@
-# haskell-copy-extension README
+# Haskell Copy Extension
 
-This is the README for your extension "haskell-copy-extension". After writing up a brief description, we recommend including the following sections.
+A VS Code extension that provides enhanced copy functionality written in Haskell and compiled to WebAssembly.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This extension enhances the copy functionality in VS Code by:
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- Adding support for copying with special handling through WebAssembly
+- Providing seamless integration with VS Code's clipboard functionality
+- Written in Haskell for robust and type-safe code
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- Visual Studio Code 1.60.0 or higher
 
-## Extension Settings
+## Installation
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+You can install this extension through the VS Code marketplace:
 
-For example:
+1. Open VS Code
+2. Go to Extensions (Ctrl+Shift+X)
+3. Search for "Haskell Copy Extension"
+4. Click Install
 
-This extension contributes the following settings:
+## Usage
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+The extension works automatically when you copy text in VS Code. No additional configuration is required.
+
+Default keyboard shortcuts:
+- Chain Copies: `Ctrl+C` 
+- Clear Buffer: `Ctrl+Shift+C` 
+
+## Development
+
+This extension is built using:
+- Haskell (core functionality)
+- WebAssembly (compilation target)
+- VS Code Extension API
+
+To build from source:
+
+1. Clone the repository
+2. Run `npm install`
+3. Build the Haskell code 
+4. Package the extension
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+No known issues at this time. Please report any bugs on the GitHub repository.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Initial release:
+- Basic copy functionality
+- WebAssembly integration
+- Haskell backend implementation
 
 ---
 
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+For more information about development, please check:
+- [Repository](https://github.com/yourusername/haskell-copy-extension)
+- [VS Code Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)

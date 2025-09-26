@@ -1,7 +1,8 @@
 {
-  "name": "haskell-copy-extension",
-  "displayName": "haskell-copy-extension",
-  "description": "A VSCode extension that allows you to accumulate multiple copied",
+  "name": "copy-chain",
+  "displayName": "copy-chain",
+  "description": "A VSCode extension that allows you to chain copy-paste operations in vscode",
+  "publisher": "ehxdie",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.98.0"

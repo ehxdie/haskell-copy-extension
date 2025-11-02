@@ -29,7 +29,7 @@ The extension works automatically when you copy text in VS Code. No additional c
 
 Default keyboard shortcuts:
 - Chain Copies: `Ctrl+C` 
-- Clear Buffer: `Ctrl+Shift+C` 
+- Clear Buffer: `Ctrl+Alt+C` 
 
 ## Development
 

@@ -142,14 +142,14 @@ export async function activate(context: vscode.ExtensionContext) {
             await instance.exports.clearBuffer!();
           }
           jsBuffer = "";
-          await vscode.env.clipboard.writeText("");
+          await vscode.env.clipboard.writeText(" ");
           vscode.window.showInformationMessage("Copy buffer cleared");
         } catch (e: any) {
           outputChannel.appendLine(
             "Error clearing Haskell buffer: " + e.message
           );
           jsBuffer = "";
-          await vscode.env.clipboard.writeText("");
+          await vscode.env.clipboard.writeText(" ");
           vscode.window.showErrorMessage("Clear failed, JS fallback used");
         }
       }
